@@ -8,4 +8,3 @@ source $DIR/zaliases
 if [ -r "$DIR/custom" ]; then
     source $DIR/custom
 fi
-
