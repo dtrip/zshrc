@@ -12,3 +12,12 @@ alias back='cd -'
 alias ack='ack-grep'
 alias rm='rm -i'
 alias ll='ls -alF --color'
+
+# tmux aliases
+alias t='tmux -2'
+alias tlist='tmux list-sessions'
+alias tvsplit='tmux split-window -h'
+alias tsplit='tmux split-window'
+alias tswap='tmux swap-pane'
+
+
