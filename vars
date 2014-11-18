@@ -1,2 +1,5 @@
+# alias to fix rvm-prompt issue
+# alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
+
 # variables set for oh-my-zsh
-ZSH_THEME="fino-time"
+ZSH_THEME="powerline"
