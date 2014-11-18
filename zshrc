@@ -1,6 +1,6 @@
 
 # present working directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR=$(dirname $0:A)
 
 source $DIR/zaliases
 
