@@ -1,3 +1,4 @@
 # aliases for zsh
 alias zshrc="vim ~/.zshrc"
 alias zhash='source ~/.zshrc'
+alias sls='screen -ls'
