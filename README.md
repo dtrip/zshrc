@@ -1,5 +1,4 @@
-#!/bin/zsh
-=====
+# #!/bin/zsh
 
 .zshrc settings
 
