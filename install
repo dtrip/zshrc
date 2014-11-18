@@ -1,0 +1,22 @@
+#! /bin/bash
+
+# Load the VERBOSE setting and other rcS variables
+. /lib/init/vars.sh
+
+# Define LSB log_* functions.
+# Depend on lsb-base (>= 3.2-14) to ensure that this file is present
+# and status_of_proc is working.
+. /lib/lsb/init-functions
+
+# present working directory
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# addes path to .zshrc script to users /.zshrc
+log_daemon_msg "Setting up ~/.zshrc ..."
+echo "source $DIR/zshrc" >> ~/.zshrc
+log_end_msg 0
+
+# Aliases and functions will now be able to be used
+log_daemon_msg "Sourcing ~/.zshrc..."
+echo `source ~/.zshrc` > /dev/null
+log_end_msg 0
