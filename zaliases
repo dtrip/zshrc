@@ -3,15 +3,23 @@ alias zshrc="vim ~/.zshrc"
 alias zhash='source ~/.zshrc'
 alias s='screen'
 alias sls='screen -ls'
+alias g='git'
+alias gr='grunt'
 alias grwatch='grunt watch &'
 alias grstop='pkill grunt'
-alias gr='grunt'
 alias v='TERM=screen-256color vi'
 alias up='cd ..'
 alias back='cd -'
 alias ack='ack-grep'
 alias rm='rm -i'
-alias ll='ls -alF --color'
+alias ll='ls -a -l --color=auto'
+
+
+alias log='multitail -f'
+alias logc='multitail -Cs -f'
+
+# compdef cdv='cd'
+alias cdv='cd /var/www'
 
 # tmux aliases
 alias t='tmux -2'
@@ -19,5 +27,6 @@ alias tlist='tmux list-sessions'
 alias tvsplit='tmux split-window -h'
 alias tsplit='tmux split-window'
 alias tswap='tmux swap-pane'
+alias tnew='tmux new -s'
 
 

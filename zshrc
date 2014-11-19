@@ -1,5 +1,7 @@
 export TERM='xterm-256color'
 
+# export PATH="$PATH:/var/www"
+
 # present working directory
 DIR=$(dirname $0:A)
 
