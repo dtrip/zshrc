@@ -5,8 +5,19 @@ plugins=(git sudo web-search python pyenv pip npm bower compser git-extras git)
 # variables set for oh-my-zsh
 ZSH_THEME="powerline"
 
+
+setopt autocd
+setopt correctall
+
+# even more extensive tab completion
+autoload -U compinit
+compinit
+
+#tab completion from both ends
+setopt completeinword
+
 POWERLINE_RIGHT_B="%D{%m/%d/%Y} %t"
-POWERLINE_DETECT_SSH="true"
+# POWERLINE_DETECT_SSH="true"
 # POWERLINE_RIGHT_B="%h"
 POWERLINE_RIGHT_A="exit-status"
 POWERLINE_FULL_CURRENT_PATH="true"
