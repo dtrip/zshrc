@@ -16,7 +16,7 @@ compinit
 #tab completion from both ends
 setopt completeinword
 
-POWERLINE_RIGHT_B="%D{%m/%d/%Y} %t"
+POWERLINE_RIGHT_B="%t"
 # POWERLINE_DETECT_SSH="true"
 # POWERLINE_RIGHT_B="%h"
 POWERLINE_RIGHT_A="exit-status"
