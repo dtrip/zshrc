@@ -1,5 +1,5 @@
 # aliases for zsh
-alias zshrc="vim ~/.zshrc"
+# alias zshrc="vim ~/.zshrc"
 alias zhash='source ~/.zshrc'
 alias s='screen'
 alias sls='screen -ls'
@@ -28,5 +28,3 @@ alias tvsplit='tmux split-window -h'
 alias tsplit='tmux split-window'
 alias tswap='tmux swap-pane'
 alias tnew='tmux new -s'
-
-

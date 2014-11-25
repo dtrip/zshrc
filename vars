@@ -1,6 +1,6 @@
 # alias to fix rvm-prompt issue
 # alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
-plugins=(git sudo web-search python pyenv pip npm bower compser git-extras git)
+plugins=(git sudo web-search python pyenv pip npm bower compser git-extras command-not-found common-aliases pylint redis-cli tmux debian)
 
 # variables set for oh-my-zsh
 ZSH_THEME="powerline"
@@ -15,7 +15,7 @@ autoload -U compinit
 compinit
 
 #tab completion from both ends
-# setopt completeinword
+setopt completeinword
 
 POWERLINE_RIGHT_B="%t"
 # POWERLINE_DETECT_SSH="true"
