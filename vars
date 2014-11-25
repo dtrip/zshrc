@@ -4,17 +4,18 @@ plugins=(git sudo web-search python pyenv pip npm bower compser git-extras git)
 
 # variables set for oh-my-zsh
 ZSH_THEME="powerline"
+CASE_SENSITIVE="true"
+COMPLETION_WAITING_DOTS="true"
 
 
 setopt autocd
 setopt correctall
-
 # even more extensive tab completion
 autoload -U compinit
 compinit
 
 #tab completion from both ends
-setopt completeinword
+# setopt completeinword
 
 POWERLINE_RIGHT_B="%t"
 # POWERLINE_DETECT_SSH="true"
