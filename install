@@ -13,7 +13,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # adds vars file to ~/.zshrc on line 49
 log_daemon_msg "adding up variables ..."
-sed -i "49isource $DIR/vars" ~/.zshrc
+sed -i "source $DIR/vars" ~/.zshrc
 log_end_msg 0
 
 # addes path to .zshrc script to users /.zshrc

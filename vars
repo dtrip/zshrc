@@ -1,10 +1,11 @@
 # alias to fix rvm-prompt issue
 # alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
-plugins=(git sudo web-search python pyenv pip npm bower compser git-extras command-not-found common-aliases pylint redis-cli tmux debian)
+# plugins=(git sudo web-search python pyenv pip npm bower compser git-extras command-not-found pylint redis-cli tmux debian)
+plugins=(git sudo web-search python pyenv pip npm bower compser git-extras debian)
 
 # variables set for oh-my-zsh
 ZSH_THEME="powerline"
-CASE_SENSITIVE="true"
+CASE_SENSITIVE="false"
 COMPLETION_WAITING_DOTS="true"
 
 
