@@ -21,6 +21,9 @@ alias logc='multitail -Cs -f'
 # compdef cdv='cd'
 alias cdv='cd /var/www'
 
+alias ff='firefox -new-window &'
+alias files='marlin &'
+
 # tmux aliases
 alias t='tmux -2'
 alias tlist='tmux list-sessions'
