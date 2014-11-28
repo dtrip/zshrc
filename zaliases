@@ -23,6 +23,7 @@ alias cdv='cd /var/www'
 
 alias ff='firefox -new-window &'
 alias files='marlin &'
+alias chrome='google-chrome'
 
 # tmux aliases
 alias t='tmux -2'
