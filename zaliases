@@ -25,6 +25,8 @@ alias ff='firefox -new-window &'
 alias files='marlin &'
 alias chrome='google-chrome'
 
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
+
 # tmux aliases
 alias t='tmux -2'
 alias tlist='tmux list-sessions'
@@ -33,3 +35,13 @@ alias tsplit='tmux split-window'
 alias tswap='tmux swap-pane'
 alias tnew='tmux new -s'
 alias tdetach='tmux detach -a'
+
+# for when cynthia is sleeping
+alias cynsleep='redshift -b 0.25 &'
+alias cynawake='redshift -x &'
+
+alias mitmproxy='mitmproxy'
+alias sslsplit='sslsplit'
+
+# record audio from mic -- just incase
+alias rec='arecord -f cd -t raw | oggenc - -r -o record.ogg'
