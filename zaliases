@@ -14,6 +14,7 @@ alias ack='ack-grep'
 alias rm='rm -i'
 alias ll='ls -a -l --color=auto'
 
+alias sqlninja='~/sqlninja-0.2.6-r1/sqlninja'
 
 alias log='multitail -f'
 alias logc='multitail -Cs -f'
@@ -45,3 +46,26 @@ alias sslsplit='sslsplit'
 
 # record audio from mic -- just incase
 alias rec='arecord -f cd -t raw | oggenc - -r -o record.ogg'
+alias vim='nocorrect vim'
+alias msfconsole='msfconsole -L'
+
+alias wifite='python ~/src/wifite.py'
+
+alias hashid='python ~/python/Hash_ID_v1.1.py'
+alias cmsmap='python ~/CMSmap/cmsmap.py'
+alias w3af='python ~/w3af/w3af_console'
+alias sqlifuzzer='/./home/dtrip/sqlifuzzer-0.6/sqlifuzzer-0.5.sh'
+alias nosqlmap='python ~/NoSQLMap/nosqlmap.py'
+alias sploit='bash ~/exploit-database/searchsploit'
+alias websploit='python ~/websploit/websploit'
+alias slowloris='perl ~/.ubuntu/scripts/slowloris.pl'
+alias JBroFuzz='java -jar /usr/share/JBroFuzz/JBroFuzz.jar'
+alias google='python ~/cli-google/google -C'
+
+alias sqlm='python ~/sqlmap/sqlmap.py --identify-waf -c ~/sqlmap/sqlmap.conf --answers "further processing=Y,password hashes=N"'
+alias sqlmap='python ~/sqlmap/sqlmap.py --dump-format sqlite --beep'
+
+alias wafw00f='python ~/wafw00f/wafw00f/main.py'
+alias boost='sudo sh /usr/local/bin/crda_change'
+
+DISPLAY=:0

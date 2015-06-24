@@ -4,10 +4,11 @@
 plugins=(git sudo web-search python pyenv pip bower compser git-extras debian)
 
 # variables set for oh-my-zsh
-ZSH_THEME="powerline"
+# ZSH_THEME="powerline"
 CASE_SENSITIVE="false"
 COMPLETION_WAITING_DOTS="true"
 
+unsetopt cdablevars
 
 setopt autocd
 setopt correctall
