@@ -10,3 +10,5 @@ source $DIR/zaliases
 if [ -r "$DIR/custom" ]; then
     source $DIR/custom
 fi
+
+source $DIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
