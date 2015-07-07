@@ -8,7 +8,7 @@ This project requires these dependences:
 
 [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
 
-[oh-my-zsh-powerline](https://github.com/wgallios/oh-my-zsh-powerline-theme)
+[oh-my-zsh-powerline](https://github.com/dtrip/oh-my-zsh-powerline-theme)
 
 ## Installation
 
