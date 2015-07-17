@@ -68,4 +68,6 @@ alias sqlmap='python ~/sqlmap/sqlmap.py --dump-format sqlite --beep'
 alias wafw00f='python ~/wafw00f/wafw00f/main.py'
 alias boost='sudo sh /usr/local/bin/crda_change'
 
+alias upgrade='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove && sudo apt-get -y autoclean'
+
 DISPLAY=:0
