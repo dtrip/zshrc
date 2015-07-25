@@ -62,8 +62,8 @@ alias slowloris='perl ~/.ubuntu/scripts/slowloris.pl'
 alias JBroFuzz='java -jar /usr/share/JBroFuzz/JBroFuzz.jar'
 alias google='python ~/cli-google/google -C'
 
-alias sqlm='python ~/sqlmap/sqlmap.py --identify-waf -c ~/sqlmap/sqlmap.conf --answers "further processing=Y,password hashes=N"'
-alias sqlmap='python ~/sqlmap/sqlmap.py --dump-format sqlite --beep'
+alias sqlm='python /usr/local/share/sqlmap/sqlmap.py --identify-waf -c /usr/local/share/sqlmap/sqlmap.conf --answers "further processing=Y,password hashes=N"'
+# alias sqlmap='python ~/sqlmap/sqlmap.py --dump-format sqlite --beep'
 
 alias wafw00f='python ~/wafw00f/wafw00f/main.py'
 alias boost='sudo sh /usr/local/bin/crda_change'
