@@ -51,9 +51,9 @@ alias msfconsole='msfconsole -L'
 
 alias wifite='python ~/src/wifite.py'
 
-alias hashid='python ~/python/Hash_ID_v1.1.py'
-alias cmsmap='python ~/CMSmap/cmsmap.py'
-alias w3af='python ~/w3af/w3af_console'
+# alias hashid='python ~/python/Hash_ID_v1.1.py'
+#alias cmsmap='python ~/CMSmap/cmsmap.py'
+alias w3af='python /usr/local/share/w3af/w3af_console'
 alias sqlifuzzer='/./home/dtrip/sqlifuzzer-0.6/sqlifuzzer-0.5.sh'
 alias nosqlmap='python ~/NoSQLMap/nosqlmap.py'
 alias sploit='bash ~/exploit-database/searchsploit'
@@ -63,10 +63,11 @@ alias JBroFuzz='java -jar /usr/share/JBroFuzz/JBroFuzz.jar'
 alias google='python ~/cli-google/google -C'
 
 alias sqlm='python /usr/local/share/sqlmap/sqlmap.py --identify-waf -c /usr/local/share/sqlmap/sqlmap.conf --answers "further processing=Y,password hashes=N"'
-# alias sqlmap='python ~/sqlmap/sqlmap.py --dump-format sqlite --beep'
+# alias sqlmap='python /usr/local/share/sqlmap/sqlmap.py --dump-format sqlite --beep'
 
-alias wafw00f='python ~/wafw00f/wafw00f/main.py'
+#alias wafw00f='python ~/wafw00f/wafw00f/main.py'
 alias boost='sudo sh /usr/local/bin/crda_change'
+alias wpscan='ruby /usr/local/share/wpscan/wpscan.rb'
 
 alias upgrade='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove && sudo apt-get -y autoclean'
 
