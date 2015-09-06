@@ -14,7 +14,7 @@ alias ack='ack-grep'
 alias rm='rm -i'
 alias ll='ls -a -l --color=auto'
 
-alias sqlninja='~/sqlninja-0.2.6-r1/sqlninja'
+# alias sqlninja='~/sqlninja-0.2.6-r1/sqlninja'
 
 alias log='multitail -f'
 alias logc='multitail -Cs -f'
@@ -24,7 +24,7 @@ alias cdv='cd /var/www'
 
 alias ff='firefox -new-window &'
 alias files='marlin &'
-alias chrome='google-chrome'
+# alias chrome='google-chrome'
 
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
 
@@ -70,5 +70,7 @@ alias boost='sudo sh /usr/local/bin/crda_change'
 alias wpscan='ruby /usr/local/share/wpscan/wpscan.rb'
 
 alias upgrade='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove && sudo apt-get -y autoclean'
+
+alias tail='tail -n50'
 
 DISPLAY=:0
