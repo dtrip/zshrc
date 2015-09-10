@@ -8,20 +8,30 @@
 # and status_of_proc is working.
 . /lib/lsb/init-functions
 
-# present working directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# gets path of file being executed
+DIR=$(dirname $(readlink -e $0))
 
 # adds vars file to ~/.zshrc on line 49
 log_daemon_msg "adding up variables ..."
-sed -i "source $DIR/vars" ~/.zshrc
-log_end_msg 0
+if sed -i "s#plugins=(git)#\#plugins=(git)\nsource $DIR/vars#" ~/.zshrc;
+    then log_end_msg 0 else log_end_msg 1
+fi
 
 # addes path to .zshrc script to users /.zshrc
 log_daemon_msg "Setting up ~/.zshrc ..."
-echo "source $DIR/zshrc" >> ~/.zshrc
-log_end_msg 0
+if echo "source $DIR/zshrc" >> ~/.zshrc;
+    then log_end_msg 0 else log_end_msg 1
+fi
+
+log_daemon_msg "Adding global aliases"
+if cat $DIR/global-aliases >> /etc/zsh/zshrc;
+    then log_end_msg 0 else log_end_msg 1
+fi
 
 # Aliases and functions will now be able to be used
-log_daemon_msg "Sourcing ~/.zshrc..."
-source ~/.zshrc
-log_end_msg 0
+log_daemon_msg "rehashing"
+if SHELL;
+    then log_end_msg 0 else log_end_msg 1
+fi
+
+exit 0
