@@ -14,10 +14,11 @@ fi
 source $DIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load zsh-autosuggestions.
-source $DIR/plugins/zsh-autosuggestions/autosuggestions.zsh
+# source $DIR/plugins/zsh-autosuggestions/autosuggestions.zsh
 #
 # # Enable autosuggestions automatically.
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
+# zle-line-init() {
+#     zle autosuggest-start
+# }
+# zle -N zle-line-init
+#
