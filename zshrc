@@ -44,6 +44,8 @@ fi
 if [ -d "/usr/local/share/rbenv" ]; then
     export PATH="$RBENV_ROOT/bin:$PATH"
     eval "$(rbenv init -)"
+    
+    $RBENV_ROOT/completions/rbenv.zsh
 fi
 
 source $DIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
