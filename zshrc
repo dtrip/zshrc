@@ -48,6 +48,7 @@ if [ -d "/usr/local/share/rbenv" ]; then
     $RBENV_ROOT/completions/rbenv.zsh
 fi
 
+source $DIR/plugins/zsh-snippets/snippets.plugin.zsh
 source $DIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load zsh-autosuggestions.
