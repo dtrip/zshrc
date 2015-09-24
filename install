@@ -24,7 +24,7 @@ if echo "source $DIR/zshrc" >> ~/.zshrc;
 fi
 
 log_daemon_msg "Adding global aliases"
-if cat $DIR/global-aliases >> /etc/zsh/zshrc;
+if sudo sh -c 'cat $DIR/global-aliases >> /etc/zsh/zshrc';
     then log_end_msg 0 else log_end_msg 1
 fi
 
