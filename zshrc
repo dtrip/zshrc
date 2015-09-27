@@ -13,9 +13,9 @@ if [ -r "$DIR/custom" ]; then
 fi
 
 
-if [ -r "$HOME/powerline-shell.py" ]; then
+if [ -r "$HOME/powerline-shell/powerline-shell.py" ]; then
     function powerline_precmd() {
-        PS1="$(~/powerline-shell.py $? --shell zsh 2> /dev/null)"
+        PS1="$(~/powerline-shell/powerline-shell.py $? --shell zsh 2> /dev/null)"
     }
 
     function install_powerline_precmd() {
@@ -34,6 +34,8 @@ if [ -r "$HOME/powerline-shell.py" ]; then
 fi
 
 
+# Install repo to use pyenv
+# git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 if [ -d "$HOME/.pyenv" ]; then
     export PATH="$HOME/.pyenv/bin:$PATH"

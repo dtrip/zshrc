@@ -58,5 +58,6 @@ alias sqlm='python /usr/local/share/sqlmap/sqlmap.py --identify-waf -c /usr/loca
 alias wpscan='ruby /usr/local/share/wpscan/wpscan.rb'
 
 alias upgrade='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove && sudo apt-get -y autoclean'
+alias '~?'='~/' 
 
-DISPLAY=:0
+#DISPLAY=:0
