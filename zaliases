@@ -50,7 +50,7 @@ alias w3af='python /usr/local/share/w3af/w3af_console'
 # alias JBroFuzz='java -jar /usr/share/JBroFuzz/JBroFuzz.jar'
 # alias google='python ~/cli-google/google -C'
 
-alias sqlm='python /usr/local/share/sqlmap/sqlmap.py --identify-waf -c /usr/local/share/sqlmap/sqlmap.conf --answers "further processing=Y,password hashes=N"'
+alias sqlm='python /usr/local/share/sqlmap/sqlmap.py -c /usr/local/share/sqlmap/sqlmap.conf --answers "further processing=Y,password hashes=N"'
 # alias sqlmap='python /usr/local/share/sqlmap/sqlmap.py --dump-format sqlite --beep'
 
 #alias wafw00f='python ~/wafw00f/wafw00f/main.py'
