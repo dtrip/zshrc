@@ -1,5 +1,7 @@
 # export TERM='xterm-256color'
+
 export TERM='screen-256color'
+[[ $TMUX = "" ]] && export TERM="xterm-256color"
 
 # export PATH="$PATH:/var/www"
 
@@ -14,28 +16,27 @@ if [ -r "$DIR/custom" ]; then
 fi
 
 
-if [ -r "$HOME/powerline-shell/powerline-shell.py" ]; then
-    function powerline_precmd() {
-        PS1="$(~/powerline-shell/powerline-shell.py $? --shell zsh 2> /dev/null)"
-    }
-
-    function install_powerline_precmd() {
-        for s in "${precmd_functions[@]}"; do
-          if [ "$s" = "powerline_precmd" ]; then
-              return
-          fi
-        done
-    precmd_functions+=(powerline_precmd)
-    }
-
-    if [ "$TERM" != "linux" ]; then
-        install_powerline_precmd
-    fi
-
-fi
+# if [ -r "$HOME/powerline-shell/powerline-shell.py" ]; then
+#     function powerline_precmd() {
+#         PS1="$(~/powerline-shell/powerline-shell.py $? --shell zsh 2> /dev/null)"
+#     }
+#
+#     function install_powerline_precmd() {
+#         for s in "${precmd_functions[@]}"; do
+#           if [ "$s" = "powerline_precmd" ]; then
+#               return
+#           fi
+#         done
+#     precmd_functions+=(powerline_precmd)
+#     }
+#
+#     if [ "$TERM" != "linux" ]; then
+#         install_powerline_precmd
+#     fi
+# fi
 
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-    # source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
 # Install repo to use pyenv

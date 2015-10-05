@@ -1,3 +1,5 @@
+DIR=$(dirname $0:A)
+
 # aliases for zsh
 alias zhash='source ~/.zshrc'
 alias g='git'
@@ -18,6 +20,7 @@ alias cdv='cd /var/www'
 # alias files='marlin &'
 # alias chrome='google-chrome'
 
+alias 256colors="/.$DIR/256-xterm-colors"
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
 
 # tmux aliases
