@@ -3,6 +3,10 @@
 export TERM='screen-256color'
 [[ $TMUX = "" ]] && export TERM="xterm-256color"
 
+# export TERM="rxvt-unicode-256color"
+# TERM='rxvt-256color'
+# COLORTERM='rxvt-unicode-256color'
+
 # export PATH="$PATH:/var/www"
 
 # present working directory
